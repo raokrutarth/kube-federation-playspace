@@ -1,0 +1,10 @@
+# from the crd <spec.group>/<spec.versions.name>
+apiVersion: "my.dummy.crd.com/v1"
+# from crd <names.kind>
+kind: DummyCRD
+metadata:
+  name: my-dummy-custom-object
+# fields from crd spec.version.<version>.schema.openAPIV3Schema.properties.spec.properties
+spec:
+  dummyField1: "my dummy field 1 value"
+  DummyField2: 999

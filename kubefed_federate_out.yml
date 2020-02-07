@@ -1,0 +1,14 @@
+---
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedDummyCRD
+metadata:
+  name: my-dummy-custom-object
+  namespace: default
+spec:
+  placement:
+    clusterSelector:
+      matchLabels: {}
+  template:
+    spec:
+      DummyField2: 999
+      dummyField1: my dummy field 1 value
