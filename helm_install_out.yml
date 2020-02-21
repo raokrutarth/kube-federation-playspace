@@ -1,0 +1,718 @@
+---
+# Source: kubefed/charts/controllermanager/templates/webhook.yaml
+apiVersion: v1
+kind: Secret
+metadata:
+  namespace: default
+  name: kubefed-admission-webhook-serving-cert
+type: kubernetes.io/tls
+stringData:
+  tls.crt: "-----BEGIN CERTIFICATE-----\nMIIDcTCCAlmgAwIBAgIRAPt68M7ckwecpep5duzDXUgwDQYJKoZIhvcNAQELBQAw\nJzElMCMGA1UEAxMca3ViZWZlZC1hZG1pc3Npb24td2ViaG9vay1jYTAeFw0yMDAy\nMjEwNTA2MDhaFw0zMDAyMTgwNTA2MDhaMCkxJzAlBgNVBAMTHlJFTEVBU0UtTkFN\nRS1hZG1pc3Npb24td2ViaG9vazCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC\nggEBALStxFfPuWClGQfDdEeS8MIm/CNKxGvoDdyXakm7757EIFgBKbafDiqArvX/\nj3W9faIf8SCPsbKvNCYfBAGf7tjBryCIuFPU6G4IuFpdostgk9XUACqU/A7hvRH/\n75ew3uCN55wUov68Wkk6JdJ4B+oUFrrX7txnb+4ejTfETIyHrJHCE3/UvbdEfZEW\n+QBb+zO5VlS+51xZLq59Hoc681P0D3ZWvuWSiAqtVF3Bxi9ukD5mzq0mFK2ska9n\nK9P5BvbiyzNuwczqzGmoXUxW7SZmtyVmQ6m1XPi+Q6gE5c7YQcd9roTbR5XU5ZZs\nV/DjLBasGyQp5Kj1TIazgXgqAbMCAwEAAaOBlTCBkjAOBgNVHQ8BAf8EBAMCBaAw\nHQYDVR0lBBYwFAYIKwYBBQUHAwEGCCsGAQUFBwMCMAwGA1UdEwEB/wQCMAAwUwYD\nVR0RBEwwSoIha3ViZWZlZC1hZG1pc3Npb24td2ViaG9vay5kZWZhdWx0giVrdWJl\nZmVkLWFkbWlzc2lvbi13ZWJob29rLmRlZmF1bHQuc3ZjMA0GCSqGSIb3DQEBCwUA\nA4IBAQAURSlmvZ+rmOjX4Qr/bb+qrd4hF5lWzWbvVLqfB+F5ubgYEDMymYF2GXYH\njEJ5VmPdcQREQrrqgJUpbZYgsbFgQJM2eVXKrDCH5+okO29Je0gmg+SA868jxSru\n5zsi8YEhwsN1dYif4XNfqmhXxKgivEAHfx84GULjHkzS3Txt4PdPmpse0siibKnw\ni/y5a/aNOrRPOALd8rn6nJOvINpBgRzHpdIhYJ82DV9NE6uq+V2/kOaRpnhBrsfw\nToxtA4Z55mqe983exjOoClNfkVMu6wnjpTDFSns2a3sdvRqkUeBWaBCWLHjFlv5X\n78mPr+bcGFPjAiGXU0fsUkLS1piz\n-----END CERTIFICATE-----\n"
+  tls.key: "-----BEGIN RSA PRIVATE KEY-----\nMIIEogIBAAKCAQEAtK3EV8+5YKUZB8N0R5Lwwib8I0rEa+gN3JdqSbvvnsQgWAEp\ntp8OKoCu9f+Pdb19oh/xII+xsq80Jh8EAZ/u2MGvIIi4U9Tobgi4Wl2iy2CT1dQA\nKpT8DuG9Ef/vl7De4I3nnBSi/rxaSTol0ngH6hQWutfu3Gdv7h6NN8RMjIeskcIT\nf9S9t0R9kRb5AFv7M7lWVL7nXFkurn0ehzrzU/QPdla+5ZKICq1UXcHGL26QPmbO\nrSYUrayRr2cr0/kG9uLLM27BzOrMaahdTFbtJma3JWZDqbVc+L5DqATlzthBx32u\nhNtHldTllmxX8OMsFqwbJCnkqPVMhrOBeCoBswIDAQABAoIBAAk+brIzbX+VUs+D\n33od+XVlezbvB1eh+ruTf5ugIuVTkXgPLywpvRbNmKX7WkKi3D+kNLj+wQ+sSRW+\nNn1CynyKhEQ82nlnhjDC/3OYINEY8tdYzl1fW/oC8KJwHrj7EpwYhoYExEYWKuRe\nNjsravQ97N/IVm8uV5quM3lr8KKr5EKPfxOvgrnwF722XGysSBmLrYP1lwmMwOdy\nwKDBk7YLnT+3JMABroJLEw2KTiTfplW0Y5GTMBidlSdqJ4hZkDEd12GsLF+zXnje\nHfP5N95Su7Org1yeQAjKSJsXTk11q6BukE4nEkYehM05f3a6PtVoAv/K0+2Ce/XV\ntiSNRVkCgYEAxhbtoft18VIY4qbw5ClsYdBnVNzOWKTFteHle+dKp+vDbdaqMyCc\n/53VorGCC7lQwN7jrt8EUJI2SQUWZtqkvuuQBYKGaEMNOg4rZr7pWa1H1hmPeOD8\ncxv1+n+FCfFUukYEGl6ZWdqCQ/LE0a9HoWij4S9mfp2dzork3hnFg2UCgYEA6X/P\nqT0D1azz5P0TXYWR2/pbUNLJnpZNuucJFbiVerI5Y5pMsRfD8VTTAqH9oj6z0ivE\nsAhAoukE/6zjScicY++uqLcgO+yuc2rxLkfcS4Kx2ZwMAV0s6j241Tsirq8r8yaa\nvAaLMQ62WZW8ZEN2URAAGjWscFNiX80bN+zAuzcCgYBUl6gFW5BjbM7Jw8bteK8b\nGld2SxEnk74GzSAmCIC+MxVzC5AFY3EITAvWfX1uqkXNB6ItpHmAOuBJ0I1fgRGH\noqsPX00sqy2z1Cc+qlqWfERILwQw98t3EMK7pcdXlqK7JXlNFYbhc0nb4ImijfrF\n+By75nUbrw2cDX5tRo4tbQKBgDWrwzfLZo4+6vC/myvr/9LogQTa7q0dL1C+uj/b\n5cAGJ1rVpLswE0HtlXMNeRdKAltU5CjyPKk1loiOXNAg5JG0DhmJvkcH6DFva3CP\n4/sXV3oFfFzz5dcRyOJ6bUZpzVhej0KY3nWwRAnjeSIyv4dyfhOIMtK+1+XdZ1w7\ndzGRAoGABZN/D6haMswlKRlNeJ6+AYUS+jD+e7NgWE2fY/JmT/xRDrrDB+lO5pB3\nhczuryhAUUfdDqkMUnKCsHjgvmtARRW2P005sc6/LgVRRzsXuII24+d837bekx96\n7JhgCEGfaUJa4iVfgRRWQdcLPTz1RP8tsq2LCPqwxPLxCxE5We4=\n-----END RSA PRIVATE KEY-----\n"
+---
+# Source: kubefed/charts/controllermanager/templates/serviceaccounts.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  namespace: default
+  name: kubefed-admission-webhook
+---
+# Source: kubefed/charts/controllermanager/templates/serviceaccounts.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: kubefed-controller
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/clusterrole.yaml
+# This role provides the necessary permissions to create admission reviews.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+# TODO(font) For namespace scoped deployments, create a unique cluster-scoped
+# resource name using the namespace. This is needed because helm does not
+# currently support the ability to share resources across multiple
+# installations of the same chart. Additionally, admission-webhooks do not
+# currently support the ability to have namespace-scoped RBAC permissions only.
+  name: system:kubefed:default:admission-requester
+
+rules:
+- apiGroups:
+  - validation.core.kubefed.io
+  resources:
+  - federatedtypeconfigs
+  - kubefedclusters
+  - kubefedconfigs
+  verbs:
+  - create
+- apiGroups:
+  - mutation.core.kubefed.io
+  resources:
+  - kubefedconfigs
+  verbs:
+  - create
+---
+# Source: kubefed/charts/controllermanager/templates/clusterrolebindings.yaml
+# This clusterrolebinding grants permissions for the admission webhook to create
+# admission reviews on behalf of the system:anonymous user.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+# TODO(font) For namespace scoped deployments, create a unique cluster-scoped
+# resource name using the namespace. This is needed because helm does not
+# currently support the ability to share resources across multiple
+# installations of the same chart. Additionally, admission-webhooks do not
+# currently support the ability to have namespace-scoped RBAC permissions only.
+  name: kubefed-admission-webhook:default:anonymous-auth
+
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: system:kubefed:default:admission-requester
+
+subjects:
+- apiGroup: rbac.authorization.k8s.io
+  kind: User
+  name: system:anonymous
+---
+# Source: kubefed/charts/controllermanager/templates/clusterrolebindings.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+# For namespace scoped deployments, create a unique cluster-scoped resource
+# name using the namespace. This is needed because admission-webhooks do not
+# currently support the ability to have namespace-scoped RBAC permissions only.
+  name: kubefed-admission-webhook:default:auth-delegator
+
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: system:auth-delegator
+subjects:
+- kind: ServiceAccount
+  name: kubefed-admission-webhook
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/roles.yaml
+# Only need access to these core namespaced resources in the KubeFed system
+# namespace regardless of kubefed deployment scope.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  labels:
+    api: kubefed
+    kubebuilder.k8s.io: 1.0.0
+  name: kubefed-admission-webhook-role
+  namespace: default
+rules:
+- apiGroups:
+  - core.kubefed.io
+  resources:
+  - federatedtypeconfigs
+  - kubefedclusters
+  - kubefedconfigs
+  verbs:
+  - get
+  - watch
+  - list
+---
+# Source: kubefed/charts/controllermanager/templates/roles.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  labels:
+    api: kubefed
+    kubebuilder.k8s.io: 1.0.0
+  name: kubefed-role
+  namespace: default
+rules:
+- apiGroups:
+  - scheduling.kubefed.io
+  resources:
+  - '*'
+  verbs:
+  - get
+  - watch
+  - list
+  - update
+- apiGroups:
+  - multiclusterdns.kubefed.io
+  resources:
+  - '*'
+  verbs:
+  - get
+  - watch
+  - list
+  - create
+  - update
+- apiGroups:
+  - core.kubefed.io
+  resources:
+  - '*'
+  verbs:
+  - get
+  - watch
+  - list
+  - create
+  - update
+  - delete
+- apiGroups:
+  - types.kubefed.io
+  resources:
+  - '*'
+  verbs:
+  - get
+  - watch
+  - list
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - get
+  - create
+  - update
+  - patch
+---
+# Source: kubefed/charts/controllermanager/templates/roles.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  labels:
+    api: kubefed
+    kubebuilder.k8s.io: 1.0.0
+  name: kubefed-config-role
+  namespace: default
+rules:
+- apiGroups:
+  - ""
+  resources:
+  - configmaps
+  verbs:
+  - get
+  - create
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - secrets
+  verbs:
+  - get
+---
+# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
+# Allow the admission webhook to read the config for terminating
+# authentication.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+# TODO(font) For namespace scoped deployments, create a unique resource name in
+# the kube-system namespace using the namespace. This is needed because
+# admission-webhooks do not currently support the ability to have
+# namespace-scoped RBAC permissions only.
+  name: kubefed-admission-webhook:default:apiextension-viewer
+
+  namespace: kube-system
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: extension-apiserver-authentication-reader
+subjects:
+- kind: ServiceAccount
+  name: kubefed-admission-webhook
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kubefed-rolebinding
+  namespace: default
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: kubefed-role
+subjects:
+- kind: ServiceAccount
+  name: kubefed-controller
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kubefed-config-rolebinding
+  namespace: default
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: kubefed-config-role
+subjects:
+- kind: ServiceAccount
+  name: kubefed-controller
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
+# Grant admission webhook access to core.kubefed.io in the KubeFed system
+# namespace only, regardless of kubefed deployment scope.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kubefed-admission-webhook-rolebinding
+  namespace: default
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: kubefed-admission-webhook-role
+subjects:
+- kind: ServiceAccount
+  name: kubefed-admission-webhook
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: kubefed-admission-webhook
+  namespace: default
+spec:
+  selector:
+    kubefed-admission-webhook: "true"
+  ports:
+  - port: 443
+    targetPort: 8443
+---
+# Source: kubefed/charts/controllermanager/templates/deployments.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kubefed-controller-manager
+  namespace: default
+  labels:
+    kubefed-control-plane: controller-manager
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      kubefed-control-plane: controller-manager
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        kubefed-control-plane: controller-manager
+    spec:
+      securityContext:
+        runAsUser: 1001
+      serviceAccountName: kubefed-controller
+      containers:
+      - command:
+        - /hyperfed/controller-manager
+        image: "quay.io/kubernetes-multicluster/kubefed:canary"
+        imagePullPolicy: "IfNotPresent"
+        name: controller-manager
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 3
+          timeoutSeconds: 3
+        resources:
+            limits:
+              cpu: 100m
+              memory: 128Mi
+            requests:
+              cpu: 100m
+              memory: 64Mi
+      terminationGracePeriodSeconds: 10
+---
+# Source: kubefed/charts/controllermanager/templates/deployments.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: kubefed-admission-webhook
+  labels:
+    kubefed-admission-webhook: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      kubefed-admission-webhook: "true"
+  template:
+    metadata:
+      labels:
+        kubefed-admission-webhook: "true"
+    spec:
+      securityContext:
+        runAsUser: 1001
+      serviceAccountName: kubefed-admission-webhook
+      containers:
+      - name: admission-webhook
+        image: "quay.io/kubernetes-multicluster/kubefed:canary"
+        imagePullPolicy: "IfNotPresent"
+        command:
+        - "/hyperfed/webhook"
+        - "--secure-port=8443"
+        - "--audit-log-path=-"
+        - "--tls-cert-file=/var/serving-cert/tls.crt"
+        - "--tls-private-key-file=/var/serving-cert/tls.key"
+        - "--v=8"
+        ports:
+        - containerPort: 8443
+        volumeMounts:
+        - mountPath: /var/serving-cert
+          name: serving-cert
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8443
+            scheme: HTTPS
+      volumes:
+      - name: serving-cert
+        secret:
+          defaultMode: 420
+          secretName: kubefed-admission-webhook-serving-cert
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: deployments.apps
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedDeployment
+    pluralName: federateddeployments
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: apps
+    kind: Deployment
+    pluralName: deployments
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: configmaps
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedConfigMap
+    pluralName: federatedconfigmaps
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: ConfigMap
+    pluralName: configmaps
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: ingresses.extensions
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedIngress
+    pluralName: federatedingresses
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: extensions
+    kind: Ingress
+    pluralName: ingresses
+    scope: Namespaced
+    version: v1beta1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: jobs.batch
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedJob
+    pluralName: federatedjobs
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: batch
+    kind: Job
+    pluralName: jobs
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: clusterroles.rbac.authorization.k8s.io
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedClusterRole
+    pluralName: federatedclusterroles
+    scope: Cluster
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: rbac.authorization.k8s.io
+    kind: ClusterRole
+    pluralName: clusterroles
+    scope: Cluster
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: services
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedService
+    pluralName: federatedservices
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: Service
+    pluralName: services
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: secrets
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedSecret
+    pluralName: federatedsecrets
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: Secret
+    pluralName: secrets
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: replicasets.apps
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedReplicaSet
+    pluralName: federatedreplicasets
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: apps
+    kind: ReplicaSet
+    pluralName: replicasets
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: namespaces
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedNamespace
+    pluralName: federatednamespaces
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: Namespace
+    pluralName: namespaces
+    scope: Cluster
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: serviceaccounts
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedServiceAccount
+    pluralName: federatedserviceaccounts
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: ServiceAccount
+    pluralName: serviceaccounts
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/charts/controllermanager/templates/kubefedconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: KubeFedConfig
+metadata:
+  name: kubefed
+  namespace: default
+spec:
+  scope: "Namespaced"
+  controllerDuration:
+    availableDelay: "20s"
+    unavailableDelay: "60s"
+  leaderElect:
+    leaseDuration: "15s"
+    renewDeadline: "10s"
+    retryPeriod: "5s"
+    resourceLock: "configmaps"
+  clusterHealthCheck:
+    period: "10s"
+    failureThreshold: 3
+    successThreshold: 1
+    timeout: "3s"
+  syncController:
+    adoptResources: "Enabled"
+  featureGates:
+  - name: PushReconciler
+    configuration: "Enabled"
+  - name: SchedulerPreferences
+    configuration: "Enabled"
+  - name: CrossClusterServiceDiscovery
+    configuration: "Enabled"
+  - name: FederatedIngress
+    configuration: "Enabled"
+---
+# Source: kubefed/charts/controllermanager/templates/webhook.yaml
+# The same comments for ValidatingWebhookConfiguration apply here to
+# MutatingWebhookConfiguration.
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: MutatingWebhookConfiguration
+metadata:
+  name: mutation.core.kubefed.io-default
+
+webhooks:
+- name: kubefedconfigs.core.kubefed.io
+  clientConfig:
+    service:
+      namespace: "default"
+      name: kubefed-admission-webhook
+      path: /apis/mutation.core.kubefed.io/v1beta1/kubefedconfigs
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHekNDQWdPZ0F3SUJBZ0lSQUxjZnJwL0NNUjM4VUhBWGJ0QmtKVEV3RFFZSktvWklodmNOQVFFTEJRQXcKSnpFbE1DTUdBMVVFQXhNY2EzVmlaV1psWkMxaFpHMXBjM05wYjI0dGQyVmlhRzl2YXkxallUQWVGdzB5TURBeQpNakV3TlRBMk1EZGFGdzB6TURBeU1UZ3dOVEEyTURkYU1DY3hKVEFqQmdOVkJBTVRIR3QxWW1WbVpXUXRZV1J0CmFYTnphVzl1TFhkbFltaHZiMnN0WTJFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFERC84dW03b1FTSFZiY09UNEh2R2FiUjMvUDVhQVF0THBFSlZwdW5lTW84NGEvVzh3c1BLd1FtckE2Q2lJVQpYcWxKL0dyd1FkQ1dyY2EwZFJNZ1pXSzYzeVdTZkFFZWIrbmJ0VElMUkpNUXkvSUp4dDU1YWZIbTRkam55ZmRlCmk2QnV1RFlERGdObmpoa3ZmNXFZNUIzcFFxTklvSUM5dVJwcGZvc2pwcWp4T3F1MkNsQVJyUm5XaTFPZzY3dUcKN3N3amNGYnV3VzRDUnNQRGZxcVBndkdSamxpT1BBZWJFUERDUGc4eGdzRzR1eVlQcVFpK1ZXM3F1MFFWeHUwRQppK1U2YmpsOHpwNkNkci9ESFZkZk0yS0dSekxRMUcvc3hmVUtqQVUvdzBldWExTUFSTU5FbXdaQWNTNnZnNzhFCnRLMWEwTDhqbHNacnViOUZybG1SeE1TWEFnTUJBQUdqUWpCQU1BNEdBMVVkRHdFQi93UUVBd0lDcERBZEJnTlYKSFNVRUZqQVVCZ2dyQmdFRkJRY0RBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcQpoa2lHOXcwQkFRc0ZBQU9DQVFFQWE2Zi95VzhDbHQ2Vzk3dzB3bWNvQ0JYazloTVZ2WHAzdUplMEhmMWpqTUFKCnlrMDNRL1B4QnBqN0c3RWhBVitvbi9kNUNwek9XeUUvaXZJZVhBNTBpSnN5cUovYVBjL3RkUTBlRnlQOGpyN3AKdDBxb25LeEFjZTNQSUtpMHMrdGFRZjdxVDFPTkdnRnlwV085VEkwVmJtT1Jod1RqOExxMnlIMjFEbkR5TDlZOAppU0tMUUt1VmxBaTA0amR5bE9DR2N6cTZUV254VzI4U0dmZzdFZ1lXNVN1bHkrNlJyWDE5dmJUTVJHKzhwK25wCml4bldkdW9uZzV3QTRtMzhIVzYwRFk5WlZ4ZEhCUkNrSC9hbGNQT2toM1RIWU1VYWNBaXJKZlpiZjNMNWRXSHkKV3c3aHM0a0JkbDh4MUdaUXZWdjZxK2hFQ0RiSWFHOU5vVFhibE5kUEpnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+  rules:
+  - operations:
+    - CREATE
+    apiGroups:
+    - core.kubefed.io
+    apiVersions:
+    - v1beta1
+    resources:
+    - kubefedconfigs
+  failurePolicy: Fail
+  namespaceSelector:
+    matchLabels:
+      name: default
+---
+# Source: kubefed/charts/controllermanager/templates/webhook.yaml
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: ValidatingWebhookConfiguration
+metadata:
+# For namespace scoped deployments, create a unique cluster-scoped resource
+# using the namespace.
+  name: validations.core.kubefed.io-default
+
+webhooks:
+- name: federatedtypeconfigs.core.kubefed.io
+  clientConfig:
+    service:
+      namespace: "default"
+      name: kubefed-admission-webhook
+      path: /apis/validation.core.kubefed.io/v1beta1/federatedtypeconfigs
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHekNDQWdPZ0F3SUJBZ0lSQUxjZnJwL0NNUjM4VUhBWGJ0QmtKVEV3RFFZSktvWklodmNOQVFFTEJRQXcKSnpFbE1DTUdBMVVFQXhNY2EzVmlaV1psWkMxaFpHMXBjM05wYjI0dGQyVmlhRzl2YXkxallUQWVGdzB5TURBeQpNakV3TlRBMk1EZGFGdzB6TURBeU1UZ3dOVEEyTURkYU1DY3hKVEFqQmdOVkJBTVRIR3QxWW1WbVpXUXRZV1J0CmFYTnphVzl1TFhkbFltaHZiMnN0WTJFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFERC84dW03b1FTSFZiY09UNEh2R2FiUjMvUDVhQVF0THBFSlZwdW5lTW84NGEvVzh3c1BLd1FtckE2Q2lJVQpYcWxKL0dyd1FkQ1dyY2EwZFJNZ1pXSzYzeVdTZkFFZWIrbmJ0VElMUkpNUXkvSUp4dDU1YWZIbTRkam55ZmRlCmk2QnV1RFlERGdObmpoa3ZmNXFZNUIzcFFxTklvSUM5dVJwcGZvc2pwcWp4T3F1MkNsQVJyUm5XaTFPZzY3dUcKN3N3amNGYnV3VzRDUnNQRGZxcVBndkdSamxpT1BBZWJFUERDUGc4eGdzRzR1eVlQcVFpK1ZXM3F1MFFWeHUwRQppK1U2YmpsOHpwNkNkci9ESFZkZk0yS0dSekxRMUcvc3hmVUtqQVUvdzBldWExTUFSTU5FbXdaQWNTNnZnNzhFCnRLMWEwTDhqbHNacnViOUZybG1SeE1TWEFnTUJBQUdqUWpCQU1BNEdBMVVkRHdFQi93UUVBd0lDcERBZEJnTlYKSFNVRUZqQVVCZ2dyQmdFRkJRY0RBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcQpoa2lHOXcwQkFRc0ZBQU9DQVFFQWE2Zi95VzhDbHQ2Vzk3dzB3bWNvQ0JYazloTVZ2WHAzdUplMEhmMWpqTUFKCnlrMDNRL1B4QnBqN0c3RWhBVitvbi9kNUNwek9XeUUvaXZJZVhBNTBpSnN5cUovYVBjL3RkUTBlRnlQOGpyN3AKdDBxb25LeEFjZTNQSUtpMHMrdGFRZjdxVDFPTkdnRnlwV085VEkwVmJtT1Jod1RqOExxMnlIMjFEbkR5TDlZOAppU0tMUUt1VmxBaTA0amR5bE9DR2N6cTZUV254VzI4U0dmZzdFZ1lXNVN1bHkrNlJyWDE5dmJUTVJHKzhwK25wCml4bldkdW9uZzV3QTRtMzhIVzYwRFk5WlZ4ZEhCUkNrSC9hbGNQT2toM1RIWU1VYWNBaXJKZlpiZjNMNWRXSHkKV3c3aHM0a0JkbDh4MUdaUXZWdjZxK2hFQ0RiSWFHOU5vVFhibE5kUEpnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+  rules:
+  - operations:
+    - CREATE
+    - UPDATE
+    apiGroups:
+    - core.kubefed.io
+    apiVersions:
+    - v1beta1
+    resources:
+    - federatedtypeconfigs
+    - federatedtypeconfigs/status
+  failurePolicy: Fail
+# For namespace scoped deployments: filter admission webhook requests for
+# resources whose namespace matches the default namespace label applied by helm
+# upon creating the namespace. User must set this label manually if namespace
+# is created prior to installing chart with helm.
+# TODO(font): Use custom namespace label once helm adds support for it. See
+# https://github.com/helm/helm/issues/4178 for more details.
+  namespaceSelector:
+    matchLabels:
+      name: default
+
+- name: kubefedclusters.core.kubefed.io
+  clientConfig:
+    service:
+      namespace: "default"
+      name: kubefed-admission-webhook
+      path: /apis/validation.core.kubefed.io/v1beta1/kubefedclusters
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHekNDQWdPZ0F3SUJBZ0lSQUxjZnJwL0NNUjM4VUhBWGJ0QmtKVEV3RFFZSktvWklodmNOQVFFTEJRQXcKSnpFbE1DTUdBMVVFQXhNY2EzVmlaV1psWkMxaFpHMXBjM05wYjI0dGQyVmlhRzl2YXkxallUQWVGdzB5TURBeQpNakV3TlRBMk1EZGFGdzB6TURBeU1UZ3dOVEEyTURkYU1DY3hKVEFqQmdOVkJBTVRIR3QxWW1WbVpXUXRZV1J0CmFYTnphVzl1TFhkbFltaHZiMnN0WTJFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFERC84dW03b1FTSFZiY09UNEh2R2FiUjMvUDVhQVF0THBFSlZwdW5lTW84NGEvVzh3c1BLd1FtckE2Q2lJVQpYcWxKL0dyd1FkQ1dyY2EwZFJNZ1pXSzYzeVdTZkFFZWIrbmJ0VElMUkpNUXkvSUp4dDU1YWZIbTRkam55ZmRlCmk2QnV1RFlERGdObmpoa3ZmNXFZNUIzcFFxTklvSUM5dVJwcGZvc2pwcWp4T3F1MkNsQVJyUm5XaTFPZzY3dUcKN3N3amNGYnV3VzRDUnNQRGZxcVBndkdSamxpT1BBZWJFUERDUGc4eGdzRzR1eVlQcVFpK1ZXM3F1MFFWeHUwRQppK1U2YmpsOHpwNkNkci9ESFZkZk0yS0dSekxRMUcvc3hmVUtqQVUvdzBldWExTUFSTU5FbXdaQWNTNnZnNzhFCnRLMWEwTDhqbHNacnViOUZybG1SeE1TWEFnTUJBQUdqUWpCQU1BNEdBMVVkRHdFQi93UUVBd0lDcERBZEJnTlYKSFNVRUZqQVVCZ2dyQmdFRkJRY0RBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcQpoa2lHOXcwQkFRc0ZBQU9DQVFFQWE2Zi95VzhDbHQ2Vzk3dzB3bWNvQ0JYazloTVZ2WHAzdUplMEhmMWpqTUFKCnlrMDNRL1B4QnBqN0c3RWhBVitvbi9kNUNwek9XeUUvaXZJZVhBNTBpSnN5cUovYVBjL3RkUTBlRnlQOGpyN3AKdDBxb25LeEFjZTNQSUtpMHMrdGFRZjdxVDFPTkdnRnlwV085VEkwVmJtT1Jod1RqOExxMnlIMjFEbkR5TDlZOAppU0tMUUt1VmxBaTA0amR5bE9DR2N6cTZUV254VzI4U0dmZzdFZ1lXNVN1bHkrNlJyWDE5dmJUTVJHKzhwK25wCml4bldkdW9uZzV3QTRtMzhIVzYwRFk5WlZ4ZEhCUkNrSC9hbGNQT2toM1RIWU1VYWNBaXJKZlpiZjNMNWRXSHkKV3c3aHM0a0JkbDh4MUdaUXZWdjZxK2hFQ0RiSWFHOU5vVFhibE5kUEpnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+  rules:
+  - operations:
+    - CREATE
+    - UPDATE
+    apiGroups:
+    - core.kubefed.io
+    apiVersions:
+    - v1beta1
+    resources:
+    - kubefedclusters
+    - kubefedclusters/status
+  failurePolicy: Fail
+# See comment above.
+  namespaceSelector:
+    matchLabels:
+      name: default
+
+- name: kubefedconfigs.core.kubefed.io
+  clientConfig:
+    service:
+      namespace: "default"
+      name: kubefed-admission-webhook
+      path: /apis/validation.core.kubefed.io/v1beta1/kubefedconfigs
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHekNDQWdPZ0F3SUJBZ0lSQUxjZnJwL0NNUjM4VUhBWGJ0QmtKVEV3RFFZSktvWklodmNOQVFFTEJRQXcKSnpFbE1DTUdBMVVFQXhNY2EzVmlaV1psWkMxaFpHMXBjM05wYjI0dGQyVmlhRzl2YXkxallUQWVGdzB5TURBeQpNakV3TlRBMk1EZGFGdzB6TURBeU1UZ3dOVEEyTURkYU1DY3hKVEFqQmdOVkJBTVRIR3QxWW1WbVpXUXRZV1J0CmFYTnphVzl1TFhkbFltaHZiMnN0WTJFd2dnRWlNQTBHQ1NxR1NJYjNEUUVCQVFVQUE0SUJEd0F3Z2dFS0FvSUIKQVFERC84dW03b1FTSFZiY09UNEh2R2FiUjMvUDVhQVF0THBFSlZwdW5lTW84NGEvVzh3c1BLd1FtckE2Q2lJVQpYcWxKL0dyd1FkQ1dyY2EwZFJNZ1pXSzYzeVdTZkFFZWIrbmJ0VElMUkpNUXkvSUp4dDU1YWZIbTRkam55ZmRlCmk2QnV1RFlERGdObmpoa3ZmNXFZNUIzcFFxTklvSUM5dVJwcGZvc2pwcWp4T3F1MkNsQVJyUm5XaTFPZzY3dUcKN3N3amNGYnV3VzRDUnNQRGZxcVBndkdSamxpT1BBZWJFUERDUGc4eGdzRzR1eVlQcVFpK1ZXM3F1MFFWeHUwRQppK1U2YmpsOHpwNkNkci9ESFZkZk0yS0dSekxRMUcvc3hmVUtqQVUvdzBldWExTUFSTU5FbXdaQWNTNnZnNzhFCnRLMWEwTDhqbHNacnViOUZybG1SeE1TWEFnTUJBQUdqUWpCQU1BNEdBMVVkRHdFQi93UUVBd0lDcERBZEJnTlYKSFNVRUZqQVVCZ2dyQmdFRkJRY0RBUVlJS3dZQkJRVUhBd0l3RHdZRFZSMFRBUUgvQkFVd0F3RUIvekFOQmdrcQpoa2lHOXcwQkFRc0ZBQU9DQVFFQWE2Zi95VzhDbHQ2Vzk3dzB3bWNvQ0JYazloTVZ2WHAzdUplMEhmMWpqTUFKCnlrMDNRL1B4QnBqN0c3RWhBVitvbi9kNUNwek9XeUUvaXZJZVhBNTBpSnN5cUovYVBjL3RkUTBlRnlQOGpyN3AKdDBxb25LeEFjZTNQSUtpMHMrdGFRZjdxVDFPTkdnRnlwV085VEkwVmJtT1Jod1RqOExxMnlIMjFEbkR5TDlZOAppU0tMUUt1VmxBaTA0amR5bE9DR2N6cTZUV254VzI4U0dmZzdFZ1lXNVN1bHkrNlJyWDE5dmJUTVJHKzhwK25wCml4bldkdW9uZzV3QTRtMzhIVzYwRFk5WlZ4ZEhCUkNrSC9hbGNQT2toM1RIWU1VYWNBaXJKZlpiZjNMNWRXSHkKV3c3aHM0a0JkbDh4MUdaUXZWdjZxK2hFQ0RiSWFHOU5vVFhibE5kUEpnPT0KLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo="
+  rules:
+  - operations:
+    - CREATE
+    - UPDATE
+    apiGroups:
+    - core.kubefed.io
+    apiVersions:
+    - v1beta1
+    resources:
+    - kubefedconfigs
+  failurePolicy: Fail
+# See comment above.
+  namespaceSelector:
+    matchLabels:
+      name: default
