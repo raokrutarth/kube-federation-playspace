@@ -1,0 +1,37 @@
+apiVersion: v1
+# service to connect fed-manager to KF
+kind: Service
+metadata:
+  labels:
+    kubefed-control-plane: controller-manager
+  name: kubefed-healthz-svc
+  namespace: default
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    kubefed-control-plane: controller-manager
+  sessionAffinity: None
+  type: ClusterIP
+---
+# fed-manager deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fed-manager-dep
+spec:
+  selector:
+    matchLabels:
+      app: fed-manager
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fed-manager
+    spec:
+      containers:
+        - name: fed-manager-con
+          image: quay.io/krao/fed-manager:v0.1
+

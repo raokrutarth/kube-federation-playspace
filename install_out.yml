@@ -3718,8 +3718,8 @@ metadata:
   name: kubefed-admission-webhook-serving-cert
 type: kubernetes.io/tls
 stringData:
-  tls.crt: "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIQQvI82qFBx9bqda27hlVjNTANBgkqhkiG9w0BAQsFADAn\nMSUwIwYDVQQDExxrdWJlZmVkLWFkbWlzc2lvbi13ZWJob29rLWNhMB4XDTIwMDIy\nMTIxMjczNFoXDTMwMDIxODIxMjczNFowKTEnMCUGA1UEAxMeUkVMRUFTRS1OQU1F\nLWFkbWlzc2lvbi13ZWJob29rMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\nAQEA16JZ9WqCOaMhI0Otyg8/rE9mjZ/U2nDMQ6G6jaSUQ6NRL2A/NRW4v2x9fO1L\nYxr2RL/SSHSJ3ol3n6m39lSK9+ryThU/kAZ6v+l28sQVUzgTfME9DqNEHXnQfNW3\n/UVNw2NuFYsk8H12YOBu/sVsGIQiLiFR3TWFJkALf8Q0Wz8dvgmXgn9S5Z7IIHY6\n0xf8L5QwIMQZ5Fsw3XldO+eFC9ywxnSzWABk1m0xx6tVmspWBYSX4pCw9k3DZYAn\nqoGWbjqXjStmiubzFRNtBV0Cs52xPr5DtmkcE9nAFhh2LjahLr3j+JFMmeSvWsI1\nRgidZwhVzOexCVTW+moWpC/Q/wIDAQABo4GVMIGSMA4GA1UdDwEB/wQEAwIFoDAd\nBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADBTBgNV\nHREETDBKgiFrdWJlZmVkLWFkbWlzc2lvbi13ZWJob29rLmRlZmF1bHSCJWt1YmVm\nZWQtYWRtaXNzaW9uLXdlYmhvb2suZGVmYXVsdC5zdmMwDQYJKoZIhvcNAQELBQAD\nggEBAJPRfL3i8aDwbLl53zRtrYLBM6X1e6l/pCBsNaewnD8OgeOd+UPmCGqNE0tI\naQ3C4iD41UOi+m/LXrfmDt6oFXGy3RWCzwMAFd7hjpVWh80RLRYs4fVAUCV1GJQv\n1Q3BuQpoTAGxf8jppLOfxIgYbSctbxdIR5G7YWy727FIEbdAT7lZUlCwTYjSmghW\nu8Z1/v6ycca6pmvDpTawT2kBsvamcGRSJahyMrrbJV8Lz4ouGvdtgG1qCDP/6eqt\nKnOOBxivsc2YCjoV6pjvv1F4sucb3bCPpuvEynCZNTUY4h6F7QARLjwbWVPvMnvc\nDc7Q9y0Fskh3Gvre/IxSx1J28qI=\n-----END CERTIFICATE-----\n"
-  tls.key: "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEA16JZ9WqCOaMhI0Otyg8/rE9mjZ/U2nDMQ6G6jaSUQ6NRL2A/\nNRW4v2x9fO1LYxr2RL/SSHSJ3ol3n6m39lSK9+ryThU/kAZ6v+l28sQVUzgTfME9\nDqNEHXnQfNW3/UVNw2NuFYsk8H12YOBu/sVsGIQiLiFR3TWFJkALf8Q0Wz8dvgmX\ngn9S5Z7IIHY60xf8L5QwIMQZ5Fsw3XldO+eFC9ywxnSzWABk1m0xx6tVmspWBYSX\n4pCw9k3DZYAnqoGWbjqXjStmiubzFRNtBV0Cs52xPr5DtmkcE9nAFhh2LjahLr3j\n+JFMmeSvWsI1RgidZwhVzOexCVTW+moWpC/Q/wIDAQABAoIBAQCxtRCiGma8DV5v\n64S78xksbjs8GC6Y30DXs99EgA/YNi3f91ff7cjVqRk57W2lfUDbo6IvKCu/BFdb\nc8kx7ragXjXWd9hsX4qlwkfPBh30+U/GDpK9D3xBNnTFjHQW/Bh8H+NHSeblcuAu\nMogG2ric87gfgEIxJbxXq4xOfWoQj03Q860ro1dpHA0xU8Bi2gYtCW/ZPYO3NqMm\n393OndsLEY+nT4ztuOXbj/HF4rRjFgXuUMbK/mB21QosKHcLl3sppSaZVS6NqIOK\nPdtex6ZQ1bN2R7O5/hAaPtnnfF7j7hC4TeGHOsJqxZE9KOW92ja9VSzEsl7m7NYK\nPrmN51lxAoGBAPXbGhqRAzjwVxT/VBIvg10AnX/3WeMuhui6/PSwfgHGj4JdaKOH\nDS2pxCmQSHANQSgVY5k3PNogMox1s9n31tBc+kPWEkdUS8YUZviyKE1Se31VEI4G\nwETxtoDxhqBmT6a+BWGAkoEyJsyX29aH+ViL6vfW6gn7OfR2PrhJ2DKdAoGBAOCI\nBv9IhnLDFmTstMEspV4cDawZ6ycEk1zlyrxyhR6NwI48nCSb05VrcgisFFis9/uv\nMupr8MTnirhIKkBZpmP3QaJRnmNxw5nkhY+YXXnCVrDMfpOUXk9waEIjCFu6XFWO\nxMSJgzCpEQ0mthXn+D/X4e29klMzZkXDjoSZweFLAoGAUDV0Fbi7qWbXsjT+s5Qm\nsj/SIn6LJ8/1GZZvklDGO0QRa8GXssoLpZseMUUuLMhWOoKH5OOdibg5ZZO84l62\nCXJb/6emfPjmY7AiS/6roVZIjYIkDYHsVlHZbcXeWxQl5ktWLBIrOdUnzVW51gq0\ncYvsU4EdB7abmMK/AZat3w0CgYEAoxQpgOE8Rb5MVaFW57d1pJTbmVR55yz7m02L\norPK3BY49RYwkqZbVvtjJ8lUPdPjiXoGkR01Es7Zgl9n0LVMlO7RTQPa9n96ghvo\nphMUUYtFS8Q7axUoKqqKDv9C4tzIk5vObrEyB/XD3LlxJxgExtoVzocR8Dw03Bbd\nPJIwr2ECgYAdsAGcpy5sRgB/NKQK2CsVhGtgvhLNuLMYj+0hsg4qS47NV/iueZ50\nAQ5aF/liCQOKZEgawtL1dzmWrJcgoch0kZt//3S5Sdf0D77N1DFdU7UkLfrQSXzp\n2geOAT+wONPs2xX8nNKf46wDKK2mw2qAwgPM1mWWpE6tI+yFHWoPrg==\n-----END RSA PRIVATE KEY-----\n"
+  tls.crt: "-----BEGIN CERTIFICATE-----\nMIIDcDCCAligAwIBAgIQGNtJLU9eJptNXESyVNhBVDANBgkqhkiG9w0BAQsFADAn\nMSUwIwYDVQQDExxrdWJlZmVkLWFkbWlzc2lvbi13ZWJob29rLWNhMB4XDTIwMDIy\nMTIzMzcyNloXDTMwMDIxODIzMzcyNlowKTEnMCUGA1UEAxMeUkVMRUFTRS1OQU1F\nLWFkbWlzc2lvbi13ZWJob29rMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC\nAQEA/AfwyzvHSlOwaBMMzwUp4A4EZ8AIZIDlfb6DQp9CFoXw8GGjItJdCM+Tw/j8\nNWXPA0nAZfsCVBK3ZBulZwZFFbZfo2aljvT2qiRn34lk2dzZIymuPQFVDSOKsOY2\ngEE+WUWakV+G5dP7ovYf8Gic2zat+6c99x4sFJS8AagkCmI4X2CRYifir+K1JQ5t\nX/pkpYIPLBBizDWs8PZVN2/5gGrVEMRKFS3+oorae5ezgfxnV/YmaUoYbYPbSq2U\nClW4/ZJNl5VlZVL+HPo6DOCv7UfQKg5S48Jl0uL4KoasGvqRqq/QMsO1GEMIIVH7\nfFlWHznGc8d7ONkPfDJYVwReWQIDAQABo4GVMIGSMA4GA1UdDwEB/wQEAwIFoDAd\nBgNVHSUEFjAUBggrBgEFBQcDAQYIKwYBBQUHAwIwDAYDVR0TAQH/BAIwADBTBgNV\nHREETDBKgiFrdWJlZmVkLWFkbWlzc2lvbi13ZWJob29rLmRlZmF1bHSCJWt1YmVm\nZWQtYWRtaXNzaW9uLXdlYmhvb2suZGVmYXVsdC5zdmMwDQYJKoZIhvcNAQELBQAD\nggEBABEmY4AmdhiCWP2RGF+fewRpQ9+uBIliQKZ/Lv386KjE4h2/YSaAThTOmGYG\nONJWMWGj2dZSFbnXez+9+MUuWXhIIGUYUbv4kYYfWISR/evsM0Pjl/a9oQ30VOFn\nr6QCPjDWIFKvlvGc2aeu5ExyKqam0MIFi9rGFSoHOHkRi89r5GpH7SxRLisp/eZ2\nkkI3EfD/4MXk15pLmmL/o7ZFcOxrAvt+FDRz9NrYM1/7xZowkw0Jz0Ac6hSJA0mE\n5xd4ZvC9Y2FJCy9z4rt5BFbsxmV/y0DSmeJ6R90v/3rCK1Icx4D3pFEkbJBiofdf\nLjrxNHUvfZHutxV+NWUCwDXBeDw=\n-----END CERTIFICATE-----\n"
+  tls.key: "-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEA/AfwyzvHSlOwaBMMzwUp4A4EZ8AIZIDlfb6DQp9CFoXw8GGj\nItJdCM+Tw/j8NWXPA0nAZfsCVBK3ZBulZwZFFbZfo2aljvT2qiRn34lk2dzZIymu\nPQFVDSOKsOY2gEE+WUWakV+G5dP7ovYf8Gic2zat+6c99x4sFJS8AagkCmI4X2CR\nYifir+K1JQ5tX/pkpYIPLBBizDWs8PZVN2/5gGrVEMRKFS3+oorae5ezgfxnV/Ym\naUoYbYPbSq2UClW4/ZJNl5VlZVL+HPo6DOCv7UfQKg5S48Jl0uL4KoasGvqRqq/Q\nMsO1GEMIIVH7fFlWHznGc8d7ONkPfDJYVwReWQIDAQABAoIBAQDGhtq+vI/3lITY\n9miYilC6FVCTCUmTIZWkv3VV/W1poIhyUfbXby2pyxlyvaatyUyQIoBT1K243CVp\nzf00clPpDoe3hxvSyFOlIphQFUJD+xtv/10o4OvGNcECJ9W2oa4jVBi1erIgSCNn\n8sil70Hfy+qw2MSO7E18yMxv4arCIZxnzbBUM/qUxLJE3oHSNU+24jqszD1aGO3y\nrplcIMcxn8XtBoSvL8raovBmwEUVHFycD+WaQldqPJ9Ngk5dC05Qc1zIl1pdNDLA\nJEOqC6WT4Zs8qCKRKIhN5infmd7zZTSPqN4ABfKZCtjhFgcDKYTlZ+uW8wznu8rB\n6VaiuuIhAoGBAPxwuOc3xhO6M8HMTXWWq/241T+Uvh8DD//MNo2wuLpyy9znzsau\n5fE66VolxMc8DJTAMw2S3XYvvIy+CtSAtIsN+81xzcJoL9DPjPI8wDTuiZ1l90+q\nyVXKYS8CJK5Xb7bXL9ZOkj4oBMuUIa9evzussb21J012orEbz/ihr3oHAoGBAP+V\nvaRdODL3v/lyxkAu6METs77k7JN+dE4SousO7+F0z8R749na5LRzBwuS3/7aOLry\nT0mpmIqxhRZnVim9yhBm1P8yGN6DWmZeQKGZEPiEmTqXAaIuAhm4iXGI2GDMIWiC\nL6csBMgSVWUn1V6tDSZ5IfRb7gjj2a8KPLkRZsyfAoGAHvcYx0wBIRRbGu+bpMvp\npwLQLa9qLtWqVb9QBctirYQ9W4iXxalYjWGjlCpD3AiSpoB5ArY8Mi4i28TIAU8U\nVmZNt+K40ZsEGoILEP/At/12pfcHAh+5+KsNhr2lkDkre+sjdA9JQxSXmf0+sItX\nu9MwLkwVWRwvUrhNp3r10msCgYBHADQkmvjnv8eG5omIfv+N04lVeIb4GmL45Vh4\n8DdXbHnjXX9Yn+R09Jd6cZzkUX79AB9imUiVDuen56EaC208zTRSiHo8JkVQttJB\nkiISx9NBYX3Erf9LYeZcseVaTprhS3kteZ8CbYVnin9Nw8kpbPEvzvH7akCozbE8\nwEbMhQKBgQCkv5w7ZrI/kRx6YPT0Z6rpmTA0mhotm9W3zdmdug8uYmKowdC++o/d\nn2qlM4CNsMJDvNrotJw9yYKEw/wnDkQZrCDUIQSGcQ96jXJqMAG2xZ2P7/Ijl7UN\n7KF9DbnFsnQ8A+3W/rw2eKcCs9eNpPHLjIEIL/QPSvxXLiZ/CNs+HQ==\n-----END RSA PRIVATE KEY-----\n"
 ---
 # Source: kubefed/charts/controllermanager/templates/serviceaccounts.yaml
 apiVersion: v1
@@ -3764,6 +3764,24 @@ rules:
   - create
 ---
 # Source: kubefed/charts/controllermanager/templates/clusterrolebindings.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+# For namespace scoped deployments, create a unique cluster-scoped resource
+# name using the namespace. This is needed because admission-webhooks do not
+# currently support the ability to have namespace-scoped RBAC permissions only.
+  name: kubefed-admission-webhook:default:auth-delegator
+
+roleRef:
+  kind: ClusterRole
+  apiGroup: rbac.authorization.k8s.io
+  name: system:auth-delegator
+subjects:
+- kind: ServiceAccount
+  name: kubefed-admission-webhook
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/clusterrolebindings.yaml
 # This clusterrolebinding grants permissions for the admission webhook to create
 # admission reviews on behalf of the system:anonymous user.
 apiVersion: rbac.authorization.k8s.io/v1
@@ -3785,24 +3803,6 @@ subjects:
 - apiGroup: rbac.authorization.k8s.io
   kind: User
   name: system:anonymous
----
-# Source: kubefed/charts/controllermanager/templates/clusterrolebindings.yaml
-apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRoleBinding
-metadata:
-# For namespace scoped deployments, create a unique cluster-scoped resource
-# name using the namespace. This is needed because admission-webhooks do not
-# currently support the ability to have namespace-scoped RBAC permissions only.
-  name: kubefed-admission-webhook:default:auth-delegator
-
-roleRef:
-  kind: ClusterRole
-  apiGroup: rbac.authorization.k8s.io
-  name: system:auth-delegator
-subjects:
-- kind: ServiceAccount
-  name: kubefed-admission-webhook
-  namespace: default
 ---
 # Source: kubefed/charts/controllermanager/templates/roles.yaml
 # Only need access to these core namespaced resources in the KubeFed system
@@ -3912,38 +3912,6 @@ rules:
   - patch
 ---
 # Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
-# Grant admission webhook access to core.kubefed.io in the KubeFed system
-# namespace only, regardless of kubefed deployment scope.
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
-metadata:
-  name: kubefed-admission-webhook-rolebinding
-  namespace: default
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: kubefed-admission-webhook-role
-subjects:
-- kind: ServiceAccount
-  name: kubefed-admission-webhook
-  namespace: default
----
-# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
-apiVersion: rbac.authorization.k8s.io/v1
-kind: RoleBinding
-metadata:
-  name: kubefed-config-rolebinding
-  namespace: default
-roleRef:
-  apiGroup: rbac.authorization.k8s.io
-  kind: Role
-  name: kubefed-config-role
-subjects:
-- kind: ServiceAccount
-  name: kubefed-controller
-  namespace: default
----
-# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
@@ -3980,6 +3948,38 @@ subjects:
   name: kubefed-admission-webhook
   namespace: default
 ---
+# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
+# Grant admission webhook access to core.kubefed.io in the KubeFed system
+# namespace only, regardless of kubefed deployment scope.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kubefed-admission-webhook-rolebinding
+  namespace: default
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: kubefed-admission-webhook-role
+subjects:
+- kind: ServiceAccount
+  name: kubefed-admission-webhook
+  namespace: default
+---
+# Source: kubefed/charts/controllermanager/templates/rolebindings.yaml
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kubefed-config-rolebinding
+  namespace: default
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: kubefed-config-role
+subjects:
+- kind: ServiceAccount
+  name: kubefed-controller
+  namespace: default
+---
 # Source: kubefed/charts/controllermanager/templates/service.yaml
 apiVersion: v1
 kind: Service
@@ -3992,50 +3992,6 @@ spec:
   ports:
   - port: 443
     targetPort: 8443
----
-# Source: kubefed/charts/controllermanager/templates/deployments.yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: kubefed-controller-manager
-  namespace: default
-  labels:
-    kubefed-control-plane: controller-manager
-spec:
-  replicas: 2
-  selector:
-    matchLabels:
-      kubefed-control-plane: controller-manager
-  strategy: {}
-  template:
-    metadata:
-      labels:
-        kubefed-control-plane: controller-manager
-    spec:
-      securityContext:
-        runAsUser: 1001
-      serviceAccountName: kubefed-controller
-      containers:
-      - command:
-        - /hyperfed/controller-manager
-        image: "quay.io/kubernetes-multicluster/kubefed:canary"
-        imagePullPolicy: "IfNotPresent"
-        name: controller-manager
-        livenessProbe:
-          httpGet:
-            path: /healthz
-            port: 8080
-          initialDelaySeconds: 5
-          periodSeconds: 3
-          timeoutSeconds: 3
-        resources:
-            limits:
-              cpu: 100m
-              memory: 128Mi
-            requests:
-              cpu: 100m
-              memory: 64Mi
-      terminationGracePeriodSeconds: 10
 ---
 # Source: kubefed/charts/controllermanager/templates/deployments.yaml
 apiVersion: apps/v1
@@ -4085,101 +4041,66 @@ spec:
           defaultMode: 420
           secretName: kubefed-admission-webhook-serving-cert
 ---
-# Source: kubefed/templates/federatedtypeconfig.yaml
-apiVersion: core.kubefed.io/v1beta1
-kind: FederatedTypeConfig
+# Source: kubefed/charts/controllermanager/templates/deployments.yaml
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  name: services
+  name: kubefed-controller-manager
+  namespace: default
+  labels:
+    kubefed-control-plane: controller-manager
 spec:
-  federatedType:
-    group: types.kubefed.io
-    kind: FederatedService
-    pluralName: federatedservices
-    scope: Namespaced
-    version: v1beta1
-  propagation: Enabled
-  targetType:
-    kind: Service
-    pluralName: services
-    scope: Namespaced
-    version: v1
+  replicas: 2
+  selector:
+    matchLabels:
+      kubefed-control-plane: controller-manager
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        kubefed-control-plane: controller-manager
+    spec:
+      securityContext:
+        runAsUser: 1001
+      serviceAccountName: kubefed-controller
+      containers:
+      - command:
+        - /hyperfed/controller-manager
+        image: "quay.io/kubernetes-multicluster/kubefed:canary"
+        imagePullPolicy: "IfNotPresent"
+        name: controller-manager
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 3
+          timeoutSeconds: 3
+        resources:
+            limits:
+              cpu: 100m
+              memory: 128Mi
+            requests:
+              cpu: 100m
+              memory: 64Mi
+      terminationGracePeriodSeconds: 10
 ---
 # Source: kubefed/templates/federatedtypeconfig.yaml
 apiVersion: core.kubefed.io/v1beta1
 kind: FederatedTypeConfig
 metadata:
-  name: configmaps
+  name: serviceaccounts
 spec:
   federatedType:
     group: types.kubefed.io
-    kind: FederatedConfigMap
-    pluralName: federatedconfigmaps
+    kind: FederatedServiceAccount
+    pluralName: federatedserviceaccounts
     scope: Namespaced
     version: v1beta1
   propagation: Enabled
   targetType:
-    kind: ConfigMap
-    pluralName: configmaps
-    scope: Namespaced
-    version: v1
----
-# Source: kubefed/templates/federatedtypeconfig.yaml
-apiVersion: core.kubefed.io/v1beta1
-kind: FederatedTypeConfig
-metadata:
-  name: deployments.apps
-spec:
-  federatedType:
-    group: types.kubefed.io
-    kind: FederatedDeployment
-    pluralName: federateddeployments
-    scope: Namespaced
-    version: v1beta1
-  propagation: Enabled
-  targetType:
-    group: apps
-    kind: Deployment
-    pluralName: deployments
-    scope: Namespaced
-    version: v1
----
-# Source: kubefed/templates/federatedtypeconfig.yaml
-apiVersion: core.kubefed.io/v1beta1
-kind: FederatedTypeConfig
-metadata:
-  name: ingresses.extensions
-spec:
-  federatedType:
-    group: types.kubefed.io
-    kind: FederatedIngress
-    pluralName: federatedingresses
-    scope: Namespaced
-    version: v1beta1
-  propagation: Enabled
-  targetType:
-    group: extensions
-    kind: Ingress
-    pluralName: ingresses
-    scope: Namespaced
-    version: v1beta1
----
-# Source: kubefed/templates/federatedtypeconfig.yaml
-apiVersion: core.kubefed.io/v1beta1
-kind: FederatedTypeConfig
-metadata:
-  name: jobs.batch
-spec:
-  federatedType:
-    group: types.kubefed.io
-    kind: FederatedJob
-    pluralName: federatedjobs
-    scope: Namespaced
-    version: v1beta1
-  propagation: Enabled
-  targetType:
-    group: batch
-    kind: Job
-    pluralName: jobs
+    kind: ServiceAccount
+    pluralName: serviceaccounts
     scope: Namespaced
     version: v1
 ---
@@ -4207,18 +4128,38 @@ spec:
 apiVersion: core.kubefed.io/v1beta1
 kind: FederatedTypeConfig
 metadata:
-  name: serviceaccounts
+  name: namespaces
 spec:
   federatedType:
     group: types.kubefed.io
-    kind: FederatedServiceAccount
-    pluralName: federatedserviceaccounts
+    kind: FederatedNamespace
+    pluralName: federatednamespaces
     scope: Namespaced
     version: v1beta1
   propagation: Enabled
   targetType:
-    kind: ServiceAccount
-    pluralName: serviceaccounts
+    kind: Namespace
+    pluralName: namespaces
+    scope: Cluster
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: deployments.apps
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedDeployment
+    pluralName: federateddeployments
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: apps
+    kind: Deployment
+    pluralName: deployments
     scope: Namespaced
     version: v1
 ---
@@ -4265,19 +4206,78 @@ spec:
 apiVersion: core.kubefed.io/v1beta1
 kind: FederatedTypeConfig
 metadata:
-  name: namespaces
+  name: jobs.batch
 spec:
   federatedType:
     group: types.kubefed.io
-    kind: FederatedNamespace
-    pluralName: federatednamespaces
+    kind: FederatedJob
+    pluralName: federatedjobs
     scope: Namespaced
     version: v1beta1
   propagation: Enabled
   targetType:
-    kind: Namespace
-    pluralName: namespaces
-    scope: Cluster
+    group: batch
+    kind: Job
+    pluralName: jobs
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: ingresses.extensions
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedIngress
+    pluralName: federatedingresses
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    group: extensions
+    kind: Ingress
+    pluralName: ingresses
+    scope: Namespaced
+    version: v1beta1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: configmaps
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedConfigMap
+    pluralName: federatedconfigmaps
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: ConfigMap
+    pluralName: configmaps
+    scope: Namespaced
+    version: v1
+---
+# Source: kubefed/templates/federatedtypeconfig.yaml
+apiVersion: core.kubefed.io/v1beta1
+kind: FederatedTypeConfig
+metadata:
+  name: services
+spec:
+  federatedType:
+    group: types.kubefed.io
+    kind: FederatedService
+    pluralName: federatedservices
+    scope: Namespaced
+    version: v1beta1
+  propagation: Enabled
+  targetType:
+    kind: Service
+    pluralName: services
+    scope: Namespaced
     version: v1
 ---
 # Source: kubefed/charts/controllermanager/templates/kubefedconfig.yaml
@@ -4328,7 +4328,7 @@ webhooks:
       namespace: "default"
       name: kubefed-admission-webhook
       path: /apis/mutation.core.kubefed.io/v1beta1/kubefedconfigs
-    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRTWpVajlEaDFxRHZOVHRPYjJERGRCekFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl4TWpjek0xb1hEVE13TURJeE9ESXhNamN6TTFvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQUtONDcranJXTFB0ZDAzdzlKVXduTmIrOWlOZ3U0aTRZQUlqRysxbUZzZVN5OVJqUjRVdTl0ZzdFc2RzbDEwdQpsMEFlbEx1T3B5TnJTQ0lsY3BFSVVuSGdOVzY1Qld6ZTl1Sjg5ekR3WkQwNnlkSHpQZXhQTk9LU0RVREh3ZFpYCnBlRGtvT2JLZmtZU005OGdpeVRKN2JLRUVveXlqMzV1TWhnamdiYk9lMTA3R1NuTXViL0c4bkJmbVdhRnQwTzEKWWNGSjF3aFhhUjE5MGVLYnIxSUwrcVA4dGxtZG5LeGxKMU9pT2tBQU9LSVB0eUNrakdENkkySWFGckx2NlEzNQpLR29ET0tHNE4zWlA2SEtmMjU0MXdUNlcrSk45dmVPVmcyaEFJeE9VSW95ZHZQdVpDNWRqUGtTWUpNSlFlVkwzCmtoMWlYV3BNMVFvQmVjM3JYYy9LNkxzQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBRTNrbENUSXE1ZDJ4NUplRDl2NXg1UVVuV3FtT1hHaFZBc0VtMU5PZUlGNnR0CmRPcXVsc24zamdmWG9PdTZPUFEvL1l6cGc4Vy9GNXQ5YzNETmc4Q1dUT3BjZWxyR1JsUEoybHVUWC9yM1pQZzAKQlR2UFZyVmJMai83bW0ycW10QmxoNlZGU0p2eGZtYVh6dWp2OVdmL2h1eTlESmJBbngrSnhuZHpQNSttaTZBQgpycE1uYmZBYnFEclBhZkFiUHJlZTZNQTl0dml2RGtBRU5xZ1V1eUQwTVpWTitrZlZMWmp0L2V1MExIL3VQSkI4CkgwRTNEb2ZjUUpGQTRydUJBcnZodGJkbi9xeGxPYUMxOWpoZlE1VFFzSUcxVzlUSTVTLzUrUjJjbDRkd3NENTIKRnR5SUh4WDlCS0ZUUjU5bGQwQnYweHJ5Yk9rd0I5UXEyWW9UVDAxaAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRWWpGc1MzRGZjdDhIVW9Lbmh1UEY3VEFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl6TXpjeU5sb1hEVE13TURJeE9ESXpNemN5Tmxvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQU1nZWhSUk9pNThEVmZ6aURnU29TUW5URVlrOVpGampmWG9YRXNhakFOK2l4VjRBMW92bG42dGN1WkM0QnQ1cwpoZHlHMXJ4b2dHRUoyNC9hSUhCc3lTSm1FM3dXdjZPZ29kY0pTR2hTWFZnclFVTXBTd0hGKzFHMnVHVU13dUhDCm5kRDhpdjNWKzhTMnNsL253aDlHUFNldWdRZS9IL3hyb3hzV2NaaEdPNjBwRCtzb090VWJBellFNXVaM2psOWcKbU1oNDZTVlRyaEg3d3BtRFB2NDlISmVaWXdDSWUrVmJRQXViNkNQdVQ5eStxZkt5SVNtdzUxQjFMN0dyUUhRMwpranVhblJTa0Z6Zm1kd2djVDZVWGNnV3NSM0Zucyt4Tno0MUVtTCtPa1R4S2dXNEpEOGdMS244d1FxYzM4VUhmCjZQOTlxMENEaDVPSEZzZjRxMFJjZEU4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBZ0FZSWE3MnQ4ZmlQTXVWNUE4aUhDcnVhVjBzZ0RUY1NJVlhBVkc0eldwamFSCmFET2pUaUpyeE5Uek51dTdVcHhzUjVZR0ZRbmJ2S0ZGcGs1WU1QSGFMVFEwdVdPY1V3V2N4T0ZXVHAxREFpb2sKQmx1Umt4TGd3MFB3SnZPcFFlc0h1bStqY0pFRHhEeno5c0NpSU1seEtMRVZ2NGpoUENaTTlCQ0dHdE1rL3hyQwpISXdqTyt1UkZvb1pXVk9xeDZSbFprV3JMaUtEUUtEbHNHa2tJSkpvL3hNZDRhWnUxeHRwbzZVc29rbkR6RGVvClZtTWNxS041Tk9qaCtUQTQxZHUvMjU5c3ZKVmIyMm9mQmtob25OSWNCR3E4emtocEUwRGlMSDBwcWRKZnk3WDAKZmhpN1l0a2dXZTBRWEVFdFhld21pb09FTWQwcTdWZWVjdFh3Z2cxNQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
   rules:
   - operations:
     - CREATE
@@ -4358,7 +4358,7 @@ webhooks:
       namespace: "default"
       name: kubefed-admission-webhook
       path: /apis/validation.core.kubefed.io/v1beta1/federatedtypeconfigs
-    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRTWpVajlEaDFxRHZOVHRPYjJERGRCekFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl4TWpjek0xb1hEVE13TURJeE9ESXhNamN6TTFvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQUtONDcranJXTFB0ZDAzdzlKVXduTmIrOWlOZ3U0aTRZQUlqRysxbUZzZVN5OVJqUjRVdTl0ZzdFc2RzbDEwdQpsMEFlbEx1T3B5TnJTQ0lsY3BFSVVuSGdOVzY1Qld6ZTl1Sjg5ekR3WkQwNnlkSHpQZXhQTk9LU0RVREh3ZFpYCnBlRGtvT2JLZmtZU005OGdpeVRKN2JLRUVveXlqMzV1TWhnamdiYk9lMTA3R1NuTXViL0c4bkJmbVdhRnQwTzEKWWNGSjF3aFhhUjE5MGVLYnIxSUwrcVA4dGxtZG5LeGxKMU9pT2tBQU9LSVB0eUNrakdENkkySWFGckx2NlEzNQpLR29ET0tHNE4zWlA2SEtmMjU0MXdUNlcrSk45dmVPVmcyaEFJeE9VSW95ZHZQdVpDNWRqUGtTWUpNSlFlVkwzCmtoMWlYV3BNMVFvQmVjM3JYYy9LNkxzQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBRTNrbENUSXE1ZDJ4NUplRDl2NXg1UVVuV3FtT1hHaFZBc0VtMU5PZUlGNnR0CmRPcXVsc24zamdmWG9PdTZPUFEvL1l6cGc4Vy9GNXQ5YzNETmc4Q1dUT3BjZWxyR1JsUEoybHVUWC9yM1pQZzAKQlR2UFZyVmJMai83bW0ycW10QmxoNlZGU0p2eGZtYVh6dWp2OVdmL2h1eTlESmJBbngrSnhuZHpQNSttaTZBQgpycE1uYmZBYnFEclBhZkFiUHJlZTZNQTl0dml2RGtBRU5xZ1V1eUQwTVpWTitrZlZMWmp0L2V1MExIL3VQSkI4CkgwRTNEb2ZjUUpGQTRydUJBcnZodGJkbi9xeGxPYUMxOWpoZlE1VFFzSUcxVzlUSTVTLzUrUjJjbDRkd3NENTIKRnR5SUh4WDlCS0ZUUjU5bGQwQnYweHJ5Yk9rd0I5UXEyWW9UVDAxaAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRWWpGc1MzRGZjdDhIVW9Lbmh1UEY3VEFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl6TXpjeU5sb1hEVE13TURJeE9ESXpNemN5Tmxvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQU1nZWhSUk9pNThEVmZ6aURnU29TUW5URVlrOVpGampmWG9YRXNhakFOK2l4VjRBMW92bG42dGN1WkM0QnQ1cwpoZHlHMXJ4b2dHRUoyNC9hSUhCc3lTSm1FM3dXdjZPZ29kY0pTR2hTWFZnclFVTXBTd0hGKzFHMnVHVU13dUhDCm5kRDhpdjNWKzhTMnNsL253aDlHUFNldWdRZS9IL3hyb3hzV2NaaEdPNjBwRCtzb090VWJBellFNXVaM2psOWcKbU1oNDZTVlRyaEg3d3BtRFB2NDlISmVaWXdDSWUrVmJRQXViNkNQdVQ5eStxZkt5SVNtdzUxQjFMN0dyUUhRMwpranVhblJTa0Z6Zm1kd2djVDZVWGNnV3NSM0Zucyt4Tno0MUVtTCtPa1R4S2dXNEpEOGdMS244d1FxYzM4VUhmCjZQOTlxMENEaDVPSEZzZjRxMFJjZEU4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBZ0FZSWE3MnQ4ZmlQTXVWNUE4aUhDcnVhVjBzZ0RUY1NJVlhBVkc0eldwamFSCmFET2pUaUpyeE5Uek51dTdVcHhzUjVZR0ZRbmJ2S0ZGcGs1WU1QSGFMVFEwdVdPY1V3V2N4T0ZXVHAxREFpb2sKQmx1Umt4TGd3MFB3SnZPcFFlc0h1bStqY0pFRHhEeno5c0NpSU1seEtMRVZ2NGpoUENaTTlCQ0dHdE1rL3hyQwpISXdqTyt1UkZvb1pXVk9xeDZSbFprV3JMaUtEUUtEbHNHa2tJSkpvL3hNZDRhWnUxeHRwbzZVc29rbkR6RGVvClZtTWNxS041Tk9qaCtUQTQxZHUvMjU5c3ZKVmIyMm9mQmtob25OSWNCR3E4emtocEUwRGlMSDBwcWRKZnk3WDAKZmhpN1l0a2dXZTBRWEVFdFhld21pb09FTWQwcTdWZWVjdFh3Z2cxNQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
   rules:
   - operations:
     - CREATE
@@ -4387,7 +4387,7 @@ webhooks:
       namespace: "default"
       name: kubefed-admission-webhook
       path: /apis/validation.core.kubefed.io/v1beta1/kubefedclusters
-    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRTWpVajlEaDFxRHZOVHRPYjJERGRCekFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl4TWpjek0xb1hEVE13TURJeE9ESXhNamN6TTFvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQUtONDcranJXTFB0ZDAzdzlKVXduTmIrOWlOZ3U0aTRZQUlqRysxbUZzZVN5OVJqUjRVdTl0ZzdFc2RzbDEwdQpsMEFlbEx1T3B5TnJTQ0lsY3BFSVVuSGdOVzY1Qld6ZTl1Sjg5ekR3WkQwNnlkSHpQZXhQTk9LU0RVREh3ZFpYCnBlRGtvT2JLZmtZU005OGdpeVRKN2JLRUVveXlqMzV1TWhnamdiYk9lMTA3R1NuTXViL0c4bkJmbVdhRnQwTzEKWWNGSjF3aFhhUjE5MGVLYnIxSUwrcVA4dGxtZG5LeGxKMU9pT2tBQU9LSVB0eUNrakdENkkySWFGckx2NlEzNQpLR29ET0tHNE4zWlA2SEtmMjU0MXdUNlcrSk45dmVPVmcyaEFJeE9VSW95ZHZQdVpDNWRqUGtTWUpNSlFlVkwzCmtoMWlYV3BNMVFvQmVjM3JYYy9LNkxzQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBRTNrbENUSXE1ZDJ4NUplRDl2NXg1UVVuV3FtT1hHaFZBc0VtMU5PZUlGNnR0CmRPcXVsc24zamdmWG9PdTZPUFEvL1l6cGc4Vy9GNXQ5YzNETmc4Q1dUT3BjZWxyR1JsUEoybHVUWC9yM1pQZzAKQlR2UFZyVmJMai83bW0ycW10QmxoNlZGU0p2eGZtYVh6dWp2OVdmL2h1eTlESmJBbngrSnhuZHpQNSttaTZBQgpycE1uYmZBYnFEclBhZkFiUHJlZTZNQTl0dml2RGtBRU5xZ1V1eUQwTVpWTitrZlZMWmp0L2V1MExIL3VQSkI4CkgwRTNEb2ZjUUpGQTRydUJBcnZodGJkbi9xeGxPYUMxOWpoZlE1VFFzSUcxVzlUSTVTLzUrUjJjbDRkd3NENTIKRnR5SUh4WDlCS0ZUUjU5bGQwQnYweHJ5Yk9rd0I5UXEyWW9UVDAxaAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRWWpGc1MzRGZjdDhIVW9Lbmh1UEY3VEFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl6TXpjeU5sb1hEVE13TURJeE9ESXpNemN5Tmxvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQU1nZWhSUk9pNThEVmZ6aURnU29TUW5URVlrOVpGampmWG9YRXNhakFOK2l4VjRBMW92bG42dGN1WkM0QnQ1cwpoZHlHMXJ4b2dHRUoyNC9hSUhCc3lTSm1FM3dXdjZPZ29kY0pTR2hTWFZnclFVTXBTd0hGKzFHMnVHVU13dUhDCm5kRDhpdjNWKzhTMnNsL253aDlHUFNldWdRZS9IL3hyb3hzV2NaaEdPNjBwRCtzb090VWJBellFNXVaM2psOWcKbU1oNDZTVlRyaEg3d3BtRFB2NDlISmVaWXdDSWUrVmJRQXViNkNQdVQ5eStxZkt5SVNtdzUxQjFMN0dyUUhRMwpranVhblJTa0Z6Zm1kd2djVDZVWGNnV3NSM0Zucyt4Tno0MUVtTCtPa1R4S2dXNEpEOGdMS244d1FxYzM4VUhmCjZQOTlxMENEaDVPSEZzZjRxMFJjZEU4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBZ0FZSWE3MnQ4ZmlQTXVWNUE4aUhDcnVhVjBzZ0RUY1NJVlhBVkc0eldwamFSCmFET2pUaUpyeE5Uek51dTdVcHhzUjVZR0ZRbmJ2S0ZGcGs1WU1QSGFMVFEwdVdPY1V3V2N4T0ZXVHAxREFpb2sKQmx1Umt4TGd3MFB3SnZPcFFlc0h1bStqY0pFRHhEeno5c0NpSU1seEtMRVZ2NGpoUENaTTlCQ0dHdE1rL3hyQwpISXdqTyt1UkZvb1pXVk9xeDZSbFprV3JMaUtEUUtEbHNHa2tJSkpvL3hNZDRhWnUxeHRwbzZVc29rbkR6RGVvClZtTWNxS041Tk9qaCtUQTQxZHUvMjU5c3ZKVmIyMm9mQmtob25OSWNCR3E4emtocEUwRGlMSDBwcWRKZnk3WDAKZmhpN1l0a2dXZTBRWEVFdFhld21pb09FTWQwcTdWZWVjdFh3Z2cxNQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
   rules:
   - operations:
     - CREATE
@@ -4411,7 +4411,7 @@ webhooks:
       namespace: "default"
       name: kubefed-admission-webhook
       path: /apis/validation.core.kubefed.io/v1beta1/kubefedconfigs
-    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRTWpVajlEaDFxRHZOVHRPYjJERGRCekFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl4TWpjek0xb1hEVE13TURJeE9ESXhNamN6TTFvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQUtONDcranJXTFB0ZDAzdzlKVXduTmIrOWlOZ3U0aTRZQUlqRysxbUZzZVN5OVJqUjRVdTl0ZzdFc2RzbDEwdQpsMEFlbEx1T3B5TnJTQ0lsY3BFSVVuSGdOVzY1Qld6ZTl1Sjg5ekR3WkQwNnlkSHpQZXhQTk9LU0RVREh3ZFpYCnBlRGtvT2JLZmtZU005OGdpeVRKN2JLRUVveXlqMzV1TWhnamdiYk9lMTA3R1NuTXViL0c4bkJmbVdhRnQwTzEKWWNGSjF3aFhhUjE5MGVLYnIxSUwrcVA4dGxtZG5LeGxKMU9pT2tBQU9LSVB0eUNrakdENkkySWFGckx2NlEzNQpLR29ET0tHNE4zWlA2SEtmMjU0MXdUNlcrSk45dmVPVmcyaEFJeE9VSW95ZHZQdVpDNWRqUGtTWUpNSlFlVkwzCmtoMWlYV3BNMVFvQmVjM3JYYy9LNkxzQ0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBRTNrbENUSXE1ZDJ4NUplRDl2NXg1UVVuV3FtT1hHaFZBc0VtMU5PZUlGNnR0CmRPcXVsc24zamdmWG9PdTZPUFEvL1l6cGc4Vy9GNXQ5YzNETmc4Q1dUT3BjZWxyR1JsUEoybHVUWC9yM1pQZzAKQlR2UFZyVmJMai83bW0ycW10QmxoNlZGU0p2eGZtYVh6dWp2OVdmL2h1eTlESmJBbngrSnhuZHpQNSttaTZBQgpycE1uYmZBYnFEclBhZkFiUHJlZTZNQTl0dml2RGtBRU5xZ1V1eUQwTVpWTitrZlZMWmp0L2V1MExIL3VQSkI4CkgwRTNEb2ZjUUpGQTRydUJBcnZodGJkbi9xeGxPYUMxOWpoZlE1VFFzSUcxVzlUSTVTLzUrUjJjbDRkd3NENTIKRnR5SUh4WDlCS0ZUUjU5bGQwQnYweHJ5Yk9rd0I5UXEyWW9UVDAxaAotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
+    caBundle: "LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURHakNDQWdLZ0F3SUJBZ0lRWWpGc1MzRGZjdDhIVW9Lbmh1UEY3VEFOQmdrcWhraUc5dzBCQVFzRkFEQW4KTVNVd0l3WURWUVFERXh4cmRXSmxabVZrTFdGa2JXbHpjMmx2YmkxM1pXSm9iMjlyTFdOaE1CNFhEVEl3TURJeQpNVEl6TXpjeU5sb1hEVE13TURJeE9ESXpNemN5Tmxvd0p6RWxNQ01HQTFVRUF4TWNhM1ZpWldabFpDMWhaRzFwCmMzTnBiMjR0ZDJWaWFHOXZheTFqWVRDQ0FTSXdEUVlKS29aSWh2Y05BUUVCQlFBRGdnRVBBRENDQVFvQ2dnRUIKQU1nZWhSUk9pNThEVmZ6aURnU29TUW5URVlrOVpGampmWG9YRXNhakFOK2l4VjRBMW92bG42dGN1WkM0QnQ1cwpoZHlHMXJ4b2dHRUoyNC9hSUhCc3lTSm1FM3dXdjZPZ29kY0pTR2hTWFZnclFVTXBTd0hGKzFHMnVHVU13dUhDCm5kRDhpdjNWKzhTMnNsL253aDlHUFNldWdRZS9IL3hyb3hzV2NaaEdPNjBwRCtzb090VWJBellFNXVaM2psOWcKbU1oNDZTVlRyaEg3d3BtRFB2NDlISmVaWXdDSWUrVmJRQXViNkNQdVQ5eStxZkt5SVNtdzUxQjFMN0dyUUhRMwpranVhblJTa0Z6Zm1kd2djVDZVWGNnV3NSM0Zucyt4Tno0MUVtTCtPa1R4S2dXNEpEOGdMS244d1FxYzM4VUhmCjZQOTlxMENEaDVPSEZzZjRxMFJjZEU4Q0F3RUFBYU5DTUVBd0RnWURWUjBQQVFIL0JBUURBZ0trTUIwR0ExVWQKSlFRV01CUUdDQ3NHQVFVRkJ3TUJCZ2dyQmdFRkJRY0RBakFQQmdOVkhSTUJBZjhFQlRBREFRSC9NQTBHQ1NxRwpTSWIzRFFFQkN3VUFBNElCQVFBZ0FZSWE3MnQ4ZmlQTXVWNUE4aUhDcnVhVjBzZ0RUY1NJVlhBVkc0eldwamFSCmFET2pUaUpyeE5Uek51dTdVcHhzUjVZR0ZRbmJ2S0ZGcGs1WU1QSGFMVFEwdVdPY1V3V2N4T0ZXVHAxREFpb2sKQmx1Umt4TGd3MFB3SnZPcFFlc0h1bStqY0pFRHhEeno5c0NpSU1seEtMRVZ2NGpoUENaTTlCQ0dHdE1rL3hyQwpISXdqTyt1UkZvb1pXVk9xeDZSbFprV3JMaUtEUUtEbHNHa2tJSkpvL3hNZDRhWnUxeHRwbzZVc29rbkR6RGVvClZtTWNxS041Tk9qaCtUQTQxZHUvMjU5c3ZKVmIyMm9mQmtob25OSWNCR3E4emtocEUwRGlMSDBwcWRKZnk3WDAKZmhpN1l0a2dXZTBRWEVFdFhld21pb09FTWQwcTdWZWVjdFh3Z2cxNQotLS0tLUVORCBDRVJUSUZJQ0FURS0tLS0tCg=="
   rules:
   - operations:
     - CREATE
@@ -4427,3 +4427,41 @@ webhooks:
   namespaceSelector:
     matchLabels:
       name: default
+apiVersion: v1
+---
+# service to connect fed-manager to KF
+kind: Service
+metadata:
+  labels:
+    kubefed-control-plane: controller-manager
+  name: kubefed-healthz-svc
+  namespace: deaas
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    kubefed-control-plane: controller-manager
+  sessionAffinity: None
+  type: ClusterIP
+---
+# fed-manager deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fed-manager-dep
+spec:
+  selector:
+    matchLabels:
+      app: fed-manager
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: fed-manager
+    spec:
+      containers:
+        - name: fed-manager-con
+          image: quay.io/krao/bauhaus-fedmanager:v0.1
+
