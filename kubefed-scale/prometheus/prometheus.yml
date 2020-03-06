@@ -1,0 +1,37 @@
+global:
+    scrape_interval: 2s
+
+scrape_configs:
+  - job_name: kube_api_server_metrics
+    scheme: https  # remove if you want to scrape metrics on insecure port
+    basic_auth:
+      username: admin
+      password: RHVoZnQ3RGk1STQ3cW5aeUdwTW84QXMrOEhTYzVvbnZQcXZjb0lwbFo0RT0K
+    static_configs:
+    - targets:
+      - 15.111.205.209:16443
+    metrics_path: /metrics
+    tls_config:
+      insecure_skip_verify: true
+  - job_name: kubelet_metrics
+    scheme: https
+    basic_auth:
+      username: admin
+      password: RHVoZnQ3RGk1STQ3cW5aeUdwTW84QXMrOEhTYzVvbnZQcXZjb0lwbFo0RT0K
+    static_configs:
+    - targets:
+      - 15.111.205.209:16443
+    metrics_path: /api/v1/nodes/canery/proxy/metrics
+    tls_config:
+      insecure_skip_verify: true
+  - job_name: cadviser_metrics
+    scheme: https
+    basic_auth:
+      username: admin
+      password: RHVoZnQ3RGk1STQ3cW5aeUdwTW84QXMrOEhTYzVvbnZQcXZjb0lwbFo0RT0K
+    static_configs:
+    - targets:
+      - 15.111.205.209:16443
+    metrics_path: /api/v1/nodes/canery/proxy/metrics/cadvisor
+    tls_config:
+      insecure_skip_verify: true

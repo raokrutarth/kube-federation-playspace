@@ -1,0 +1,11 @@
+apiVersion: 1
+
+providers:
+- name: 'benchmark_main'
+  orgId: 1
+  folder: ''
+  disableDeletion: true
+  type: file
+  options:
+    path: /var/lib/grafana/default_dashboards
+

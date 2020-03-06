@@ -1,0 +1,12 @@
+
+# config file version
+apiVersion: 1
+
+datasources:
+- name: prometheus
+  isDefault: true
+  type: prometheus
+  access: proxy
+  orgId: 1
+  url: http://prometheus:9090
+  editable: false
